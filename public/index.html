@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anant Sinha — SnapSense AI</title><link rel="stylesheet" href="/style.css">\n</head>
+<body>
+<div class="shell">
+  <header class="top"><div class="brand"><div class="brand-mark">✦</div><div><div class="brand-owner">ANANT SINHA PRESENTS</div><div class="brand-name">SnapSense <span>AI</span></div></div></div><div class="top-note">IMAGE UNDERSTANDING STUDIO <span class="live-dot"></span></div></header>
+  <main>
+    <section class="hero"><div class="eyebrow">SEE THE IMAGE DIFFERENTLY</div><h1>Turn pixels into<br><em>perspective.</em></h1><p>Drop in a picture. Let AI uncover the details and put what it sees into words.</p></section>
+    <section class="workspace">
+      <div class="upload-card">
+        <div class="card-label">01 / YOUR IMAGE</div>
+        <label class="dropzone" id="dropzone" for="imageInput"><div class="upload-symbol">↥</div><strong>Drop an image here</strong><span>or click to browse · JPG, PNG, WEBP · up to 8MB</span><input id="imageInput" type="file" accept="image/*" hidden></label>
+        <div class="preview-wrap" id="previewWrap" hidden><img id="preview" alt="Selected image preview"><button id="removeImage" class="remove" type="button">Remove image ×</button></div>
+        <div class="controls"><label for="style">CAPTION STYLE</label><select id="style"><option>Detailed</option><option>Short</option><option>Accessibility</option><option>Creative</option></select></div>
+        <button id="analyzeBtn" class="analyze" disabled>Analyze image <span>↗</span></button><p class="privacy">Images are sent to Gemini for analysis and are not saved by this app.</p>
+      </div>
+      <div class="result-card"><div class="card-label">02 / AI INSIGHTS</div><div class="result" id="result"><div class="result-empty"><div class="result-icon">◉</div><h3>Your insight will appear here</h3><p>Upload an image and run an analysis to see its caption and visible details.</p></div></div><div class="result-actions" id="resultActions" hidden><button id="copyBtn">Copy text</button><button id="againBtn">Analyze another</button></div></div>
+    </section>
+  </main>
+  <footer><span>ANANT SINHA</span> · SnapSense AI · Built for visual discovery</footer>
+</div>
+<script src="/app.js"></script>
+</body></html>
